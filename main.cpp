@@ -12,6 +12,7 @@
 #include "Triangulos.h"
 #include "Cuadrados.h"
 #include "Teteras.h"
+#include "Cola.h"
 
 
 //-----------------------------------------------------------------------------
@@ -29,6 +30,7 @@ protected:
    Triangulos* miTriangulo;
    Cuadrados* miCuadrado;
    Teteras* miTetera;
+   Cola* miCola;
 
 public:
 	myWindow(){}
@@ -49,7 +51,7 @@ public:
 
           //transformaiones globales
           //glRotatef(timer010 * 360, 0.5, 1.0f, 0.1f);
-          glTranslatef(0, 0, -5);
+          glTranslatef(0, 0, -10);
 
           //Explicacion mostrada en clase
 
@@ -90,21 +92,125 @@ public:
 
               //Triagulo
 
-              miTriangulo->DibujarTriangulos(0,3,0);
+                    //miTriangulo->DibujarTriangulos(0,3,0);
 
               //Teteras
 
-              miTetera->DibujarTeteras(-3,0,0,0.5,0,0,0,0);
+                  //miTetera->DibujarTeteras(-3,0,0,0.5,0,0,0,0);
 
-              miTetera->DibujarTeteras(0,-3,0,0.5,0,0,0,0);
+                  //miTetera->DibujarTeteras(0,-3,0,0.5,0,0,0,0);
 
-              miTetera->DibujarTeteras(3,0,0,0.5,0,0,0,0);
+                  //miTetera->DibujarTeteras(3,0,0,0.5,0,0,0,0);
 
               //Cuadrados con rotacion
 
-              miCuadrado->DibujarCuadrados(-3,3,0,0.5,45,0,0,1);
+                  //miCuadrado->DibujarCuadrados(-3,3,0,0.5,45,0,0,1);
 
-              miCuadrado->DibujarCuadrados(3,3,0,0.5,150,0,0,1);
+                  //miCuadrado->DibujarCuadrados(3,3,0,0.5,150,0,0,1);
+
+              // Cola
+
+              //miCola->DibujarCola(0, -1, 0, 1, 25, 0, 0, 0, 10);
+
+              // Creatividad con colas
+
+              miCola->DibujarCola(2.5, 1.5, 0, 2, 15, 0, 0, 1, 7);
+              miCola->DibujarCola(-2.8, 4.3, 0, 2, -65, 0, 0, 1, 7);
+
+
+              //miCuadrado->DibujarCuadrados(0,-2,0,1,0,0,0,0);
+              miCuadrado->DibujarCuadrados(-1,-2,0,1,0,0,0,0);
+              miCuadrado->DibujarCuadrados(1,-2,0,1,0,0,0,0);
+              miCuadrado->DibujarCuadrados(2,-2,0,1,0,0,0,0);
+              miCuadrado->DibujarCuadrados(-2,-2,0,1,0,0,0,0);
+
+              miCuadrado->DibujarCuadrados(0, -3, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-1, -3, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(1, -3, 0, 1, 0, 0, 0, 0);
+              //miCuadrado->DibujarCuadrados(2, -3, 0, 1, 0, 0, 0, 0);
+              //miCuadrado->DibujarCuadrados(-2, -3, 0, 1, 0, 0, 0, 0);
+
+              miCuadrado->DibujarCuadrados(0, -4, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-1, -4, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(1, -4, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(2, -4, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(3, -4, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(4, -4, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(5, -4, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-2, -4, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-3, -4, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-4, -4, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-5, -4, 0, 1, 0, 0, 0, 0);
+              
+              miCuadrado->DibujarCuadrados(0, -5, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-1, -5, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(1, -5, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(2, -5, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(3, -5, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(4, -5, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(5, -5, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(6, -5, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-2, -5, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-3, -5, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-4, -5, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-5, -5, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-6, -5, 0, 1, 0, 0, 0, 0);
+              
+              miCuadrado->DibujarCuadrados(0, -6, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-1, -6, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(1, -6, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(2, -6, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(3, -6, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(4, -6, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(5, -6, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(6, -6, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-2, -6, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-3, -6, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-4, -6, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-5, -6, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-6, -6, 0, 1, 0, 0, 0, 0);
+
+              miCuadrado->DibujarCuadrados(2, 1, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(2, 0, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(2, 2, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(2, -2, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(2, -1, 0, 1, 0, 0, 0, 0);
+
+              miCuadrado->DibujarCuadrados(-2, 1, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-2, 0, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-2, 2, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-2, -2, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-2, -1, 0, 1, 0, 0, 0, 0);
+
+
+              miCuadrado->DibujarCuadrados(0,1,0,1,0,0,0,0);
+              miCuadrado->DibujarCuadrados(-1,1,0,1,0,0,0,0);
+              miCuadrado->DibujarCuadrados(1,1,0,1,0,0,0,0);
+              miCuadrado->DibujarCuadrados(2,1,0,1,0,0,0,0);
+              miCuadrado->DibujarCuadrados(-2,1,0,1,0,0,0,0);
+              
+              miCuadrado->DibujarCuadrados(0,3,0,1,0,0,0,0);
+              miCuadrado->DibujarCuadrados(-1,3,0,1,0,0,0,0);
+              miCuadrado->DibujarCuadrados(1,3,0,1,0,0,0,0);
+              miCuadrado->DibujarCuadrados(2,3,0,1,0,0,0,0);
+              miCuadrado->DibujarCuadrados(-2,3,0,1,0,0,0,0);
+
+
+              miCuadrado->DibujarCuadrados(0, 0, -1, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(0, 2, -1, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(1, -1, -1, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-1, 0, -1, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-1, -1, -1, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(0, -1, -1, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-1, 1, -1, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(0, 1, -1, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(0, -2, -1, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(1, 0, -1, 1, 0, 0, 0, 0);
+
+
+              miCuadrado->DibujarCuadrados(1, 2, 0, 1, 0, 0, 0, 0);
+              miCuadrado->DibujarCuadrados(-1, 2, 0, 1, 0, 0, 0, 0);
+
 
         //gran pop
         glPopMatrix();
@@ -131,6 +237,7 @@ public:
         miTriangulo = new Triangulos();
         miTetera = new Teteras();
         miCuadrado = new Cuadrados();
+        miCola = new Cola();
 
 		shader = SM.loadfromFile("vertexshader.txt","fragmentshader.txt"); // load (and compile, link) from file
 		if (shader==0) 

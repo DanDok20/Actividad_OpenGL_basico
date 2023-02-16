@@ -28,6 +28,9 @@
     <Filter Include="cwc\source">
       <UniqueIdentifier>{49579a3c-e838-43e6-8885-e817bba769cf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Objetos">
+      <UniqueIdentifier>{78327784-48e5-4d96-9a99-07d880238785}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="glew\include\Gl\glew.h">
@@ -69,9 +72,18 @@
     <ClInclude Include="cwc\include\glWindow.h">
       <Filter>cwc\include</Filter>
     </ClInclude>
-    <ClInclude Include="Triangulos.h" />
-    <ClInclude Include="Cuadrados.h" />
-    <ClInclude Include="Teteras.h" />
+    <ClInclude Include="Cola.h">
+      <Filter>Objetos</Filter>
+    </ClInclude>
+    <ClInclude Include="Cuadrados.h">
+      <Filter>Objetos</Filter>
+    </ClInclude>
+    <ClInclude Include="Teteras.h">
+      <Filter>Objetos</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangulos.h">
+      <Filter>Objetos</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glew\source\glew.c">
@@ -156,9 +168,18 @@
       <Filter>cwc\source</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Triangulos.cpp" />
-    <ClCompile Include="Cuadrados.cpp" />
-    <ClCompile Include="Teteras.cpp" />
+    <ClCompile Include="Cola.cpp">
+      <Filter>Objetos</Filter>
+    </ClCompile>
+    <ClCompile Include="Cuadrados.cpp">
+      <Filter>Objetos</Filter>
+    </ClCompile>
+    <ClCompile Include="Teteras.cpp">
+      <Filter>Objetos</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangulos.cpp">
+      <Filter>Objetos</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="freeglut\source\freeglutdll.def">
